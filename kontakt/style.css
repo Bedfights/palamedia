@@ -256,7 +256,7 @@ background-color:rgb(30, 60, 90);
     }
     #sC2 {
         margin-top: 1vh;
-        height:22vh;
+        height:208px;
         
     }
     #flexText {
@@ -281,7 +281,7 @@ background-color:rgb(30, 60, 90);
         flex-direction:column;
         align-items:flex-end;
         margin-left:auto;
-        margin-top: -22vh;
+        margin-top: -208px;
     }
     #social1, #social2, #social3 {
         width:6vh;
