@@ -256,13 +256,13 @@ background-color:rgb(30, 60, 90);
     }
     #sC2 {
         margin-top: 1vh;
-        height:20vh;
+        height:22vh;
         
     }
     #flexText {
         display:flex;
         flex-direction:column;
-        width:40%;
+        width:55%;
     }
     #cI1, #cI2, #cI3, #submit {
         /* 4x2 */
@@ -276,10 +276,17 @@ background-color:rgb(30, 60, 90);
         display:block;
     }
     .socials {
-        width: 50%;
-        display:block;
+        width: 6vh;
+        display:flex;
+        flex-direction:column;
         float:right;
-        margin-top: calc(-12vh - 25px);
+        margin-top: -22vh;
+    }
+    #social1, #social2, #social3 {
+        width:6vh;
+        height:6vh;
+        float:right;
+        margin-top:1vh;
     }
     #submit {
         margin:4px;
@@ -291,7 +298,6 @@ background-color:rgb(30, 60, 90);
     .content {
         height:70vh;
         width: 90vw;
-        text-align:center;
         margin-left:auto;
         margin-right:auto;
     }

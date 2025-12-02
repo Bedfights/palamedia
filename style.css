@@ -263,6 +263,9 @@ h1 {
         float:none;
         margin-top:2vh;
     }
+    #sC1, #sC2 {
+        height: 280px;
+    }
     #vC1 {
         width: 100%;
         height: 52.3vw;
@@ -270,7 +273,7 @@ h1 {
         float: none;
     }
     #section1 {
-        height: calc(880px + 52.3vw + 10vh);
+        height: calc(960px + 52.3vw + 10vh);
     }
     /*780 10 52.3*/
     #section2 {
