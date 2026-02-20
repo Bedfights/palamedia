@@ -35,10 +35,12 @@
 </div>
 <div class="content">
     <div class="smallContainer" id="sC1">
-        <input class="contactInput" id="cI1" type="text" name="name" placeholder="Namn" required>
-        <input class="contactInput" id="cI2" type="email" name="mail" placeholder="E-mail" required>
-        <textarea class="contactInput" id="cI3" name="message" placeholder="Meddelande" required></textarea>
-        <button type="submit" id="submit">Skicka</button>
+        <form action="https://formspree.io/f/mreaaodn" method="POST">
+            <input class="contactInput" id="cI1" type="text" name="name" placeholder="Namn" required>
+            <input class="contactInput" id="cI2" type="email" name="mail" placeholder="E-mail" required>
+            <textarea class="contactInput" id="cI3" name="message" placeholder="Meddelande" required></textarea>
+            <button type="submit" id="submit">Skicka</button>
+        </form>
     </div>
     <div class="smallContainer" id="sC2">
         <div id="flexText">
