@@ -40,7 +40,7 @@ body.menuOpen {
     width:90vw;
 }
 .selectButton:hover {
-    background-color:rgb(30, 60, 90);
+    background-color:rgb(28, 46, 74);
     text-shadow:
         0 0 10px #00bfff,
         0 0 30px #00bfff,  
@@ -169,16 +169,16 @@ h1 {
     font-size:20px;
 }
 #sC1 {
-    background-color:rgb(240, 240, 230);
-    color: rgb(30,60,90);
+    background-color:rgb(240,240,230);
+    color: rgb(28,46,74);
     padding:1.5vw;
     height:240px;
     width:26.5vw;
     float:left;
 }
 #sC2 {
-    background-color:rgb(30,60,90);
-    color: rgb(240, 240, 230);
+    background-color:rgb(28,46,74);
+    color: rgb(240,240,230);
     padding:1.5vw;
     height:240px;
     width:26.5vw;
@@ -192,8 +192,8 @@ h1 {
     float:left;
 }
 #sC3 {
-    background-color:rgb(30,60,90);
-    color: rgb(240, 240, 230);
+    background-color:rgb(28,46,74);
+    color: rgb(240,240,230);
     padding:1.5vw;
     height:200px;
     width:26.5vw;
@@ -201,8 +201,8 @@ h1 {
     float:right;
 }
 #sC4 {
-    background-color:rgb(30,60,90);
-    color: rgb(240, 240, 230);
+    background-color:rgb(28,46,74);
+    color: rgb(240,240,230);
     padding:1.5vw;
     height:100px;
     width:26.5vw;
@@ -222,7 +222,7 @@ h1 {
 /* Bottom */
 #section2 {
     position:absolute;
-    background-color:rgb(240, 240, 230);
+    background-color:rgb(240,240,230);
     height:100px;
     width:100%;
     margin-top: calc(390px + 19vw + 10vh);
