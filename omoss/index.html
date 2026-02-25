@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/palamedia/blacktransparentlogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Om oss | PALAmedia</title>
+    <title>Om oss | PalaMedia</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -60,15 +60,18 @@
 </div>
 <div id="section2">
     <div id="bottomContainer">
-        <img id="bottomImg" src="/palamedia/blacktransparentlogo.png"><h2>PALAmedia UF</h2>
+        <img id="bottomImg" src="/palamedia/blacktransparentlogo.png"><h2>PalaMedia UF</h2>
     </div>
 </div>
 <script>
-console.log("Hello World");
-
 const menuButton = document.getElementById('menuButton');
 menuButton.onclick = function() {
-    menu.style.display = 'block';
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+    document.body.classList.toggle('menuOpen');
 }
 if (location.hostname !== "bedfights.github.io") {
     document.querySelectorAll("a").forEach(a => {

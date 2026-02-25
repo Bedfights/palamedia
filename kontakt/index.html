@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/palamedia/blacktransparentlogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt | PALAmedia</title>
+    <title>Kontakt | PalaMedia</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -54,18 +54,26 @@
         </div>
         </div>
         <div class="socials">
-            <img id="social1" src="/palamedia/facebookicon.png">
-            <img id="social2" src="/palamedia/instagramicon.png">
-            <img id="social3" src="/palamedia/tiktokicon.png">
+            <!-- <img id="social1" src="/palamedia/facebookicon.png"> -->
+            <a href="https://www.instagram.com/palamedia.uf?igsh=OWxqdm44ZXlyYmYy" target="_blank">
+                <img id="social2" src="/palamedia/instagramicon.png">
+            </a>
+            <!-- <img id="social3" src="/palamedia/tiktokicon.png"> -->
+            <a href="https://www.youtube.com/@PALAMediaUF" target="_blank">
+                <img id="social4" src="/palamedia/youtubeicon.png">
+            </a>
         </div>
     </div>
 </div>
 <script>
-console.log("Hello World");
-
 const menuButton = document.getElementById('menuButton');
 menuButton.onclick = function() {
-    menu.style.display = 'block';
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+    document.body.classList.toggle('menuOpen');
 }
 if (location.hostname !== "bedfights.github.io") {
     document.querySelectorAll("a").forEach(a => {

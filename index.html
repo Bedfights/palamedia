@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" href="/palamedia/blacktransparentlogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hem | PALAmedia</title>
+    <title>Hem | PalaMedia</title>
     <link href="style.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -32,7 +32,7 @@
 </div>
 <div id="largeTitle">
     <h1 id="h1-1">VÄLKOMMEN TILL</h1><br>
-    <h1>PALAmedia</h1>
+    <h1>PalaMedia</h1>
 </div>
 <div id="section1"></div>
 <div class="content">
@@ -48,7 +48,7 @@
         <iframe 
             width="100%" 
             height="100%"
-            src="https://www.youtube.com/embed/Yd5g0MEPXpE"
+            src="https://www.youtube.com/embed/kSlbmR6ZHzI"
             title="testTitle"
             frameborder="0"
             allowfullscreen>
@@ -65,7 +65,7 @@
 </div>
 <div id="section2">
     <div id="bottomContainer">
-        <img id="bottomImg" src="/palamedia/blacktransparentlogo.png"><h2>PALAmedia UF</h2>
+        <img id="bottomImg" src="/palamedia/blacktransparentlogo.png"><h2>PalaMedia UF</h2>
     </div>
 </div>
 <script>
@@ -73,7 +73,12 @@ console.log("Hello World");
 
 const menuButton = document.getElementById('menuButton');
 menuButton.onclick = function() {
-    menu.style.display = 'block';
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
+    document.body.classList.toggle('menuOpen');
 }
 if (location.hostname !== "bedfights.github.io") {
     document.querySelectorAll("a").forEach(a => {

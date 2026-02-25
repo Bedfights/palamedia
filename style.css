@@ -1,7 +1,9 @@
 body {
     background-color:rgb(10, 18, 42);
     margin:0;  
-
+}
+body.menuOpen {
+    overflow:hidden;
 }
 
 /* **** */
@@ -116,7 +118,6 @@ header{
     margin: 0;
     float: right;
     display:none;
-    text-align:right;
 }
 #menuButton:hover {
   text-shadow: 
