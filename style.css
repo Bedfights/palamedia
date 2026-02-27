@@ -264,8 +264,14 @@ h1 {
         float:none;
         margin-top:2vh;
     }
-    #sC1, #sC2 {
-        height: 280px;
+    #sC1 {
+        height: 260px;
+    }
+    #sC2 {
+        height:300px;
+    }
+    #sC3 {
+        height:320px;
     }
     #vC1 {
         width: 100%;
@@ -274,7 +280,7 @@ h1 {
         float: none;
     }
     #section1 {
-        height: calc(960px + 52.3vw + 10vh);
+        height: calc(1060px + 52.3vw + 10vh);
     }
     /*780 10 52.3*/
     #section2 {
