@@ -178,7 +178,7 @@ header{
     width: 100vw;
     height: 100vh;
     background-color: rgba(5, 9, 21, 0.4);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(2px);
     display: none;
     justify-content: center;
     align-items: center;
