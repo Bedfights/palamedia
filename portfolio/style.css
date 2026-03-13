@@ -177,7 +177,8 @@ header{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(10, 18, 42, 0.8);
+    background-color: rgba(5, 9, 21, 0.4);
+    backdrop-filter: blur(3px);
     display: none;
     justify-content: center;
     align-items: center;
