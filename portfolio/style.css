@@ -138,6 +138,33 @@ header{
 #underline {
     text-decoration:underline;
 }
+/* Bottom */
+#section2 {
+    position:absolute;
+    background-color:rgb(240,240,230);
+    height:100px;
+    width:100%;
+    margin-top: 10px;
+    margin-left:0;
+    margin-right:0;
+    z-index: -1;
+}
+#section2 h2 {
+    margin: 35px 0;
+    font-size:30px;
+    font-family:arial;
+    display:block;
+    float:right;
+}
+#bottomContainer {
+    margin: 0 auto;
+    width: 40vw;
+}
+#bottomImg {
+    height:100px;
+    width:100px;
+    float:left;
+}
 
 /* **** */
 #content img {
@@ -191,7 +218,25 @@ header{
     img {
         height: 200px;
     }
+    #wideImg {
+        height: 169px;
+    }
     #lightboxImg {
-        height: 400px;
+        height: 380px;
+    }
+    #section2 {
+        margin-top: 10px;
+        text-align:center;
+    }
+    #bottomImg {
+        display:none;
+    }
+    #bottomContainer {
+        width: 80vw;
+    }
+    #section2 h2 {
+        margin-left:auto;
+        margin-right:auto;
+        float:none;
     }
 }
