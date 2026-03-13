@@ -1,16 +1,18 @@
 body {
     margin:0;
-    background-color:rgb(10, 18, 42)
+    background-color:rgb(10, 18, 42);
+    overflow-x:hidden;
 }
 body.menuOpen {
     overflow:hidden;
 }
 
 #content {
-    width: 60vw;
-    margin-top:-100px;
+    width: 95vw;
+    margin-top:10px;
     margin-left:auto;
     margin-right:auto;
+    text-align:center;
 }
 
 /* **** */
@@ -137,71 +139,31 @@ header{
     text-decoration:underline;
 }
 
-/* title */
-#largeTitle {
-    margin-top:20vh;
-    width:80vw;
-    height:17vh;
-    margin-left:auto;
-    margin-right:auto;
+/* **** */
+#content img {
+    margin: 5px;
+    cursor: pointer;
 }
-#h1-1 {
-    margin-top:0;
-    position:sticky;
-    z-index:1;
-}
-h1 {
-    margin:0;
-    font-size:6vh;
-    font-weight:100;
-    text-align:center;
-    font-family:arial;
-    color:white;
-}
-
-/* ******* */
-/* sliders */
-/* ******* */
-.slider {
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    overflow: hidden;
-}
-.track {
-    display: flex;
+    height: 100%;
+    background-color: rgba(10, 18, 42, 0.8);
+    display: none;
+    justify-content: center;
     align-items: center;
-    width: max-content;
+    z-index: 3;
 }
-#track1 {
-    animation: scroll 40s linear infinite;
+#lightboxImg {
+    height:800px;
+    max-width: 90%;
+    max-height: 90%;
 }
-#track1:hover {
-    animation-play-state:paused;
+#lightbox.active {
+    display:flex;
 }
-#track2 {
-    margin-top: 50px;
-    animation: scroll 40s linear infinite reverse;
-}
-#track2:hover {
-    animation-play-state:paused;
-}
-.track img {
-    width: 340px;
-    height: auto;
-    margin:0 20px;
-    object-fit: contain;
-    flex-shrink: 0;
-}
-
-@keyframes scroll {
-    from {
-        transform: translate(0);
-    }
-    to {
-        transform: translate(-50%);
-    }
-}
-
-
 
 
 @media (max-width: 1000px) {
@@ -212,19 +174,23 @@ h1 {
         display:block;
     }
     #content {
-        width:80%;
         margin-top:-200px;
     }
-    .track img {
-        width: 240px;
+    img {
+        height: 240px;
+    }
+    #lightboxImg {
+        height: 480px;
     }
 }
 @media (max-width: 900px) {
     #content {
         margin-top:-370px;
-        width:100%;
     }
-    .track img {
-        width: 200px;
+    img {
+        height: 200px;
+    }
+    #lightboxImg {
+        height: 400px;
     }
 }

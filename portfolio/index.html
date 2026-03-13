@@ -31,36 +31,21 @@
         <li><div id="svoren"><a id="underline" href="/palamedia/index.html">SV</a><a> / </a><a href="/eng/home/index.html">EN</a></div></li>
     </ul>
 </div>
-<div id="largeTitle">
-    <h1 id="h1-1">PORTFOLIO</h1>
-</div>
+
 <div id="content">
-<div class="slider">
-    <div class="track" id="track1">
-       <img src="/palamedia/portfolio/portfoliobilder/R1B1.JPG">
-       <img src="/palamedia/portfolio/portfoliobilder/R1B2.png">
-       <img src="/palamedia/portfolio/portfoliobilder/R1B3.png">
-       <img src="/palamedia/portfolio/portfoliobilder/R1B4.png">
-
-       <img src="/palamedia/portfolio/portfoliobilder/R1B1.JPG">
-       <img src="/palamedia/portfolio/portfoliobilder/R1B2.png">
-       <img src="/palamedia/portfolio/portfoliobilder/R1B3.png">
-       <img src="/palamedia/portfolio/portfoliobilder/R1B4.png">
-    </div>
-    <div class="track" id="track2">
-        <img src="/palamedia/portfolio/portfoliobilder/R2B1.png">
-        <img src="/palamedia/portfolio/portfoliobilder/R2B2.JPG">
-        <img src="/palamedia/portfolio/portfoliobilder/R2B3.png">
-        <img src="/palamedia/portfolio/portfoliobilder/R2B4.JPG">
-        <img src="/palamedia/portfolio/portfoliobilder/R2B5.JPG">
-
-        <img src="/palamedia/portfolio/portfoliobilder/R2B1.png">
-        <img src="/palamedia/portfolio/portfoliobilder/R2B2.JPG">
-        <img src="/palamedia/portfolio/portfoliobilder/R2B3.png">
-        <img src="/palamedia/portfolio/portfoliobilder/R2B4.JPG">
-        <img src="/palamedia/portfolio/portfoliobilder/R2B5.JPG">
-    </div>
+        <img src="/palamedia/portfolio/portfoliobilder/1.JPG" data-fullsize="/palamedia/portfolio/portfoliobilder(stora)/1.JPG">
+        <img src="/palamedia/portfolio/portfoliobilder/2.JPG" data-fullsize="/palamedia/portfolio/portfoliobilder(stora)/2.png">
+        <img src="/palamedia/portfolio/portfoliobilder/3.JPG" data-fullsize="/palamedia/portfolio/portfoliobilder(stora)/3.png">
+        <img src="/palamedia/portfolio/portfoliobilder/4.JPG" data-fullsize="/palamedia/portfolio/portfoliobilder(stora)/4.png">
+        <img src="/palamedia/portfolio/portfoliobilder/5.JPG" data-fullsize="/palamedia/portfolio/portfoliobilder(stora)/5.png">
+        <img src="/palamedia/portfolio/portfoliobilder/6.JPG" data-fullsize="/palamedia/portfolio/portfoliobilder(stora)/6.JPG">
+        <img src="/palamedia/portfolio/portfoliobilder/7.JPG" data-fullsize="/palamedia/portfolio/portfoliobilder(stora)/7.png">
+        <img src="/palamedia/portfolio/portfoliobilder/8.JPG" data-fullsize="/palamedia/portfolio/portfoliobilder(stora)/8.JPG">
+        <img src="/palamedia/portfolio/portfoliobilder/9.JPG" data-fullsize="/palamedia/portfolio/portfoliobilder(stora)/9.JPG">
 </div>
+
+<div id="lightbox">
+    <img id="lightboxImg">
 </div>
 
 <script>
@@ -79,7 +64,22 @@ if (location.hostname !== "bedfights.github.io") {
     });
     document.querySelectorAll("img").forEach(img => {
         img.src = img.src.replace("/palamedia/", "/");
+        if (img.dataset.fullsize) {
+            img.dataset.fullsize = img.dataset.fullsize.replace("/palamedia/", "/");
+        }
     });
+}
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+
+document.querySelectorAll('#content img').forEach(img => {
+    img.onclick = function() {
+    lightbox.classList.add('active');
+    lightboxImg.src = img.dataset.fullsize;
+}
+});
+lightbox.onclick = function() {
+    lightbox.classList.remove('active');
 }
 console.log(location.hostname + "hostname");
 </script>
