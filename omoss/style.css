@@ -35,7 +35,7 @@ body.menuOpen {
     font-family:arial;
     font-size:2vh;
     color:rgb(240, 240, 230);
-    margin-top:7vh;
+    margin-top:5vh;
     height:10vh;
     width:90vw;
 }
@@ -48,7 +48,7 @@ body.menuOpen {
         0 0 80px #00bfff;
 }
 #svoren {
-    margin-top: 7vh;
+    margin-top: 5vh;
     font-size: 30px;
 }
 #svoren a:hover {
@@ -221,6 +221,9 @@ h1 {
     padding:0;
     z-index: -1;
 }
+.smallContainer a {
+    color:inherit;
+}
 
 /* Bottom */
 #section2 {
@@ -267,6 +270,9 @@ h1 {
         float:none;
         margin-top:2vh;
     }
+    #sC2, #sC3, #sC4, #sC5 {
+    height: 290px;
+}
     #sC1 {
         height:400px;
     }
@@ -277,7 +283,7 @@ h1 {
         float: none;
     }
     #section1 {
-        height: calc(1250px + 15vw + 10vh);
+        height: calc(1610px + 15vw + 10vh);
     }
     #section2 {
         margin-top: 80px;

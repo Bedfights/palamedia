@@ -45,7 +45,7 @@ body.menuOpen {
     font-family:arial;
     font-size:2vh;
     color:rgb(240, 240, 230);
-    margin-top:7vh;
+    margin-top:5vh;
     height:10vh;
     width:90vw;
 }
@@ -58,7 +58,7 @@ body.menuOpen {
         0 0 80px #00bfff;
 }
 #svoren {
-    margin-top: 7vh;
+    margin-top: 5vh;
     font-size: 30px;
 }
 #svoren a:hover {
