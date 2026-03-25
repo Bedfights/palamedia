@@ -1,6 +1,12 @@
 body {
-    background-color:rgb(10, 18, 42);
-    margin:0;  
+    margin:0; 
+    background:linear-gradient(
+        to bottom,
+        rgb(10, 18, 42) 0px,
+        rgb(10, 18, 42) 670px,
+        white 670px,
+        white 200vh);
+
 }
 body.menuOpen {
     overflow:hidden;
@@ -171,17 +177,15 @@ h1 {
 #sC1 {
     background-color:rgb(240,240,230);
     color: rgb(28,46,74);
-    padding:1.5vw;
-    height:240px;
-    width:26.5vw;
+    padding:1vw;
+    width:27.5vw;
     float:left;
 }
 #sC2 {
     background-color:rgb(28,46,74);
     color: rgb(240,240,230);
-    padding:1.5vw;
-    height:240px;
-    width:26.5vw;
+    padding:1vw;
+    width:27.5vw;
     margin-top:10vh;
     float:right;
 }
@@ -194,41 +198,30 @@ h1 {
 #sC3 {
     background-color:rgb(28,46,74);
     color: rgb(240,240,230);
-    padding:1.5vw;
-    height:200px;
-    width:26.5vw;
+    padding:1vw;
+    width:27.5vw;
     margin-top:2vh;
+    margin-bottom:10vh;
     float:right;
 }
 #sC4 {
     background-color:rgb(28,46,74);
     color: rgb(240,240,230);
-    padding:1.5vw;
-    height:100px;
-    width:26.5vw;
+    padding:1vw;
+    width:27.5vw;
     margin-top:2vh;
     float:left;
-}
-#section1 {
-    position:absolute;
-    background-color:white;
-    height: calc(440px + 19vw + 4vh);
-    width:100%;
-    margin-top: 24vh;
-    padding:0;
-    z-index: -1;
 }
 
 /* Bottom */
 #section2 {
-    position:absolute;
+    position:block;
     background-color:rgb(240,240,230);
     height:100px;
     width:100%;
-    margin-top: calc(390px + 19vw + 10vh);
+    margin-top: 95vh;
     margin-left:0;
     margin-right:0;
-    z-index: -1;
 }
 #section2 h2 {
     margin: 35px 0;
@@ -259,30 +252,18 @@ h1 {
     .content {
         width: 90vw;
     }
-    #sC1, #sC2, #sC3, #sC4 {
+    #sC1, #sC2, #sC3, #sC4, #vC1{
         width: calc(100% - 3vw);
         float:none;
         margin-top:2vh;
-    }
-    #sC1 {
-        height: 260px;
-    }
-    #sC2 {
-        height:300px;
-    }
-    #sC3 {
-        height:320px;
+        margin-bottom:0;
     }
     #vC1 {
-        width: 100%;
-        height: 52.3vw;
+        width: calc(100% - 1vw);
+        height: 49vw;
         margin-top: 2vh;
         float: none;
     }
-    #section1 {
-        height: calc(1060px + 52.3vw + 10vh);
-    }
-    /*780 10 52.3*/
     #section2 {
         margin-top: 80px;
         text-align:center;
