@@ -2,8 +2,8 @@ body {
     margin:0;
     background: linear-gradient(
     rgb(10, 18, 42) 0px,
-    rgb(10, 18, 42) 670px,
-    white 670px,
+    rgb(10, 18, 42) 640px,
+    white 640px,
     white 200vh
     );
     overflow-x:hidden;

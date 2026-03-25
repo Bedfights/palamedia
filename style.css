@@ -3,8 +3,8 @@ body {
     background:linear-gradient(
         to bottom,
         rgb(10, 18, 42) 0px,
-        rgb(10, 18, 42) 670px,
-        white 670px,
+        rgb(10, 18, 42) 640px,
+        white 640px,
         white 200vh);
 
 }
